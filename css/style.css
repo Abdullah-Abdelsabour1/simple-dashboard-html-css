@@ -1,0 +1,162 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background-color: #001;
+  font-family: sans-serif;
+  display: flex;
+}
+.menu {
+   background-color: #123;
+   height:100;
+   width:90px;
+   padding:20px;
+   transition:0.5s;
+   overflow:hidden;
+}
+
+@media (max-width:920px) {
+    .menu {
+        width:90px;
+    }
+}
+@media (min-width:920px) {
+    .menu:hover {
+        width:260px;
+    }
+}
+.menu .profile {
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-bottom: 30px;
+}
+.menu .profile .img-box {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px solid white;
+    flex-shrink:0;
+}
+.menu .profile .img-box img {
+    width:100%;
+}
+.menu .profile h2 {
+  font-size:22px;
+}
+.menu ul {
+   list-style-type: none;
+   position: relative;
+   height:100%;
+}
+.menu ul li a {
+   display:block;
+   text-decoration: none;
+   padding:12px;
+   margin: 10px 0;
+   display:flex;
+   align-items:center;
+   gap: 30px;
+   border-radius:8px;
+   transition: 0.5s;
+}
+.menu ul li a:hover , .active{
+    background-color: gray;
+}
+ .menu ul .log-out {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+.menu ul .log-out a {
+  background-color: #a00;
+}
+.menu ul li a i {
+   font-size: 30px;
+}
+.content {
+    width:100%;
+    margin:10px;
+}
+.content .title-info {
+    background-color: rgb(4 , 129 , 255);
+    padding:20px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:3px;
+}
+.content .title-info p {
+    font-size:20px;
+}
+.content .title-info i {
+    font-size:25px;
+}
+.content .data-info {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.content .data-info .box {
+   flex-basis:250px;
+   height: 150px;
+   background-color: #123;
+   flex-grow:1;
+   border-radius:8px;
+   display:flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.content .data-info .box:hover {
+    background-color:gray;
+}
+.content .data-info .box i {
+    font-size: 40px;
+}
+.content .data-info {
+    text-align:center;
+}
+.content .data-info .box span , 
+.content .data-info .box p {
+    font-size:30px;
+}
+.content .data-info .box p {
+   margin-bottom:8px;
+}
+table {
+    width:100%;
+    text-align:center;
+    border-spacing:8px;
+}
+thead tr th {
+    background-color: #0080ff;
+}
+th , td {
+    height:50px;
+    background-color: #123;
+    border-radius:8px;
+    width:calc(100% / 3);
+    text-align: center;
+}
+ td:hover {
+    background-color:gray;
+}
+.price  , .count {
+   
+    padding:6px;
+    border-radius:6px;
+}
+.price {
+    background-color: green;
+}
+.count {
+    background-color: gold;
+    color: #001;
+}
